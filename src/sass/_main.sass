@@ -1,0 +1,348 @@
++font(bebasneue, 'bebas_neue-webfont')
++font(bebasbold, 'bebasneue_bold-webfont')
++font(bebasregular, 'bebasneue_regular-webfont')
+
+body
+	background: url('../img/bg.JPG')
+	font-family: Helvetica, arial, sans-serif
+// begin header
+.header 
+	overflow: hidden
+	text-transform: uppercase
+	padding: 15px 0
+.container
+	width: 65%
+	margin: 0 auto
+	+r(660)
+		width: 80%
+	+r(500)
+		width: 98%
+.header__logo
+	color: #e8603c
+	text-transform: uppercase
+	font-size: 50px
+	text-decoration: none
+	padding: 23px 0
+	font-family: 'bebasbold',sans-serif
+	+r(1000)
+		font-size: 40px
+	span
+		color: #f9ddd7
+.nav
+	list-style: none
+	white-space: nowrap
+	padding-top: 20px
+	+r(1000)
+		padding-top: 10px
+
+.header__nav
+	float: right
+	li
+		display: inline-block
+		a
+			color: #b9b9b9
+			font-size: 24px
+			text-decoration: none
+			text-transform: uppercase
+			padding: 10px 10px
+			font-family: 'bebasregular',sans-serif
+			+r(1000)
+				font-size: 20px
+				padding: 5px 5px
+			+r(340)
+				font-size: 17px
+				padding: 3px
+		&:hover
+			color: #e8603c
+.h1
+	text-transform: uppercase
+	font-size: 36px
+	color: #fff
+	font-family: 'bebasbold',sans-serif
+	+r(1000)
+		font-size: 30px
+// end header
+
+// begin blogtop
+.blogtop
+	width: 100%
+	
+.topline
+	width: 16.5%
+	height: 72px
+	background-color: #f3af9d
+	position: absolute
+	+r(1000)
+		height: 54px
+	+r(660)
+		width: 8.5%
+	+r(500)
+		display: none
+	
+.topline-left
+	left: 0
+
+.topline-right
+	right: 0
+	top: 84px
+	+r(1000)
+		top: 73px
+.blogtop--container
+	background-color: #e8603c
+	margin: 0 auto
+	padding: 16px 0 16px 19px
+	+r(1000)
+		padding: 10px 0 10px 17px
+	+r(340)
+		padding: 5px 0 5px 15px
+// end blogtop
+
+// begin blogwrapper
+.blogwrapper
+	overflow: hidden
+	margin-top: 30px
+	position: relative
+	+r(1000)
+		margin-top: 20px
+.blogposts
+	width: 70%
+	float: left
+	+r(560)
+		width: 100%
+.blogpost
+	margin-bottom: 60px
+	position:relative
+	+r(1000)
+		margin-bottom: 40px
+.blogpost__img
+	img
+		max-width: 100%
+.postborder
+	width: 100%
+.border
+	background: url('../img/linebg.JPG') repeat
+	height: 13px
+.blogpost__titeleicon
+	width: 75px
+	height: 75px
+	background: #e8603c
+	left: -92px;
+	position: absolute
+	z-index: 1100
+	+r(1000)
+		height: 60px
+		width: 60px
+		left: -67px
+	+r(660)
+		left: -60px;
+		width: 50px
+		height: 50px
+	+r(500)
+		display: none
+.icon-cards, 
+.icon-file, 
+.icon-link,
+.icon-quote
+	height: 75px
+	width: 75px
+	padding: 20px
+	fill: #fff
+	+r(1000)
+		padding: 15px
+		height: 60px
+		width: 60px
+	+r(660)
+		width: 50px
+		height: 50px
+	+r(500)
+		display: none
+
+.icon-quoteorange
+	width: 30px
+	height: 30px
+	+r(1000)
+		width: 25px
+		height: 25px
+	+r(660)
+		display: none
+.blogpost__content
+	width: 100%
+	margin-bottom: 40px
+	
+//begin slider
+.slick-slider
+	height: auto
+	width: 100%
+.slick-slide img
+	width: 100%
+.slick-prev,.slick-next
+	position: absolute
+	top: 50% 
+	width: 36px 
+	height: 52px 
+	transform: translate(0,-50%)
+	left: 10px
+	background: url('../img/arrowprev.png')
+	z-index: 1000
+.slick-next
+	left: auto
+	right: 10px
+	background: url('../img/arrownext.png')
+// end slider
+.blogpost__maintext
+	margin-top: 20px
+	overflow: hidden
+.blogpost__info
+	width: 20%
+	float: left	
+.h4
+	font-size: 18px
+	padding: 5px 0
+	color: #e8603c
+	text-transform: uppercase
+	line-height: 22px
+	letter-spacing: 1px
+	font-family: 'bebasregular',sans-serif
+	+r(1000)
+		font-size: 15px
+		line-height: 17px
+.h4--date
+	padding: 0 0 5px 0
+.infotitle
+	text-decoration: none
+	color: #bababa
+	margin-bottom: 10px
+	font-size: 15px
+	+r(1000)
+		font-size: 12px
+.h2
+	color: #e8603c
+	font-size: 25px
+	text-transform: uppercase
+	font-family: 'bebasregular',sans-serif
+	padding-bottom: 10px
+	+r(1000)
+		font-size: 20px
+.blogpost__text
+	float: right
+	width: 75%
+	p
+		color: #414141
+		font-size: 14px
+		line-height: 21px
+		padding-bottom: 20px
+		+r(1000)
+			font-size: 12px
+			padding-bottom: 11px
+			line-height: 18px
+.blogpost__content--quote
+	background-color: #f1f1f1
+	padding: 10px 40px 30px 40px
+	+r(660)
+	    padding: 5px 20px 25px
+	p
+		font-style: italic
+		color: #474747
+		font-size: 15px
+		line-height: 20px
+		padding-left: 50px
+		+r(1000)
+			font-size: 13px
+			line-height: 17px
+			padding-left: 47px
+		+r(660)
+			padding-left: 0px
+.blogpost__maintext__quote
+	float: left
+	.icon-quote
+		fill: #e8663c	
+.blogpost__text--postlink
+	float: none
+	width: 100%
+	h2
+		padding-bottom: 5px
+	p
+		padding-top: 20px
+.blogpost__text__link
+	color: #a0a0a0
+	text-decoration: none
+	+r(1000)
+		font-size: 12px
+// end blogposts
+// begin blogsidebar
+.blogsidebar
+	width: 25%
+	float: right
+	+r(560)
+		display: none
+.vidget
+	margin-bottom: 30px
+	p
+		font-size: 14px
+		line-height: 18px
+		color: #464646
+		+r(1000)
+			font-size: 12px
+		
+.vidget__h1border
+	overflow: hidden
+	margin-bottom: 20px
+	
+.vidget-h1
+	color: #e8603c
+	font-size: 23px
+	display: inline-block
+	vertical-align: top
+	text-transform: uppercase
+	position: relative
+	bottom: 2px
+	color: #e8603c 
+	background: white
+	padding-right: 17px
+	+r(1000)
+		font-size: 22px
+
+.vidget__border
+	width: 100%
+	height: 23px
+	margin-bottom: 20px
+	+r(1000)
+		height: 20px
+	
+.vidget-categories__ul
+	li
+		a
+			font-size: 14px
+			text-decoration: none
+			color: #464646
+			+r(1000)
+				font-size: 12px
+.previewlastli
+	padding-right: 0px		
+.vidget-gallery__preview
+	display: inline-block
+	padding: 0 3px 3px 0
+	a
+		width: 48px
+		height: 48px
+		background-color: #f3af9d
+		border: 1px solid #e8603c
+		display: block
+// end blogsidebar
+// begin pagination
+.main-pagination
+	margin-bottom: 40px
+.pagination
+	li
+		display: inline
+		padding-left: 10px
+		
+.pagination-link
+	color: #fff
+	font-family: 'bebasregular',sans-serif
+	background: #f3b29d
+	padding: 5px 13px
+	font-size: 20px
+	text-decoration: none
+	&:hover
+		background-color: #e8663c
